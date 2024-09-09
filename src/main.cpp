@@ -15,8 +15,8 @@
 
 // SERVO confug
 #define SERVO_DATA_PIN 18
-#define SERVO_MIN_DEG 0
-#define SERVO_MAX_DEG 180
+#define SERVO_MIN_DEG 135
+#define SERVO_MAX_DEG 45
 Servo servo;
 
 
