@@ -63,6 +63,8 @@ void loop() {
 
   // GEIGER
   // generate random noise sample & send
+  // tie volume to diode intensity to quieten click when potentiometer is set to low value
+  // and limit it to values 0-255
   int ranNumVol = random(diode_intensity);
   digitalWrite(SPEAKER_PIN, ranNumVol);
   // repeat quicker (high activity) for high potentiometer values
@@ -70,10 +72,4 @@ void loop() {
   delay(randNumber);
   // quiet geiger "pop" sound
   digitalWrite(SPEAKER_PIN, LOW);
-
-  // DEBUG GEIGER
-  // Serial.print("Potentiometer value: ");
-  // Serial.println(potentiometer_value);
-  // Serial.print("Geiger strength value: ");
-  // Serial.println(geiger_strength);
 }
