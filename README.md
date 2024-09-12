@@ -9,7 +9,7 @@ This repository contains:
 
 
 ## ESP32 and used parts
-Parts used:
+#### Parts
 - ESP32
 - Breadbord
 - Potentiometer
@@ -20,7 +20,7 @@ Parts used:
 - Servomotor
 
 <details>
-  <summary>Links to parts I used </summary>
+  <summary style="font-size: 12px">Links to parts I used </summary>
 
 - [ESP32 WROOM](https://botland.store/esp32-wifi-and-bt-modules/8893-esp32-wifi-bt-42-platform-with-module-5904422337438.html)
 - [Breadbord](https://botland.store/breadoards/19943-breadboard-justpi-830-holes-5904422328610.html)
@@ -34,9 +34,9 @@ Parts used:
 </details>
 
 <br />
-ESP32 can be easily powered by a powerbank.
+ESP32 can be easily powered by a powerbank to be portable.
 
-## ESP32 configuration
+#### Configuration
 
 ## Code setup
 The code itself does not need any changes other than seting correct pins to potentiometer, speaker, diode and servo motor. It can be easily built and uploaded to ESP32 using [Platformio extension for VsCode](https://platformio.org/install/ide?install=vscode). Quick tutorial on how to use it from [Dave's Garage YT channel](https://youtu.be/XLQa1sX9KIk?si=jZ_BQljqpmHXpXcT&t=441). Once uploaded the code will run automatically every time when powered on by a charging cable or a powerbank. It does not need to be connected to a computer to work.
