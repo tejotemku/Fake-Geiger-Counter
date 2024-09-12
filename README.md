@@ -54,9 +54,9 @@ Connect peripherals to esp using connecting cables and breadboard
 
 |Part Pin|ESP32 Pin|
 |-------|---------|
-|  VIN (<span style="color:red">red</span>)  |  3V3    |
-|  GND/VOUT (ussually <span style="color:black">black</span> or <span style="color:brown">brown</span>)  |  GND    |
-|  Data (often <span style="color:blue">blue</span>)  |  D15 or any other ADC (Analog-to-Digital Converter) pin    |
+|  VIN ($${\color{red}red}$$)  |  3V3    |
+|  GND/VOUT (ussually $${\color{black}black}$$ or $${\color{brown}brown}$$)  |  GND    |
+|  Data (often $${\color{blue}blue}$$)  |  D15 or any other ADC (Analog-to-Digital Converter) pin    |
 
 ###### Diode
 
@@ -69,9 +69,9 @@ Connect peripherals to esp using connecting cables and breadboard
 
 |Part Pin|ESP32 Pin|
 |-------|---------|
-|  VIN (<span style="color:red">red</span>)  |  3V3    |
-| GND/VOUT (ussually <span style="color:black">black</span> or <span style="color:brown">brown</span>)  |  GND    |
-|  Data (often <span style="color:orange">orange</span>)  |  D18 or any other free data pin    |
+|  VIN ($${\color{red}red}$$)  |  3V3    |
+| GND/VOUT (ussually $${\color{black}black}$$ or $${\color{brown}brown}$$)  |  GND    |
+|  Data (often $${\color{orange}orange}$$)  |  D18 or any other free data pin    |
 
 ###### PAM8302 Amplifier to ESP32
 
@@ -87,8 +87,8 @@ Connect peripherals to esp using connecting cables and breadboard
 
 |Speaker Pin|PAM8302 Pin|
 |-------|---------|
-|  <span style="color:red">red</span>  |  +    |
-| <span style="color:black">black</span>  |  -    |
+|  $${\color{red}red}$$  |  +    |
+| $${\color{black}black}$$  |  -    |
 
 
 Example [ESP32 Wroom PINout diagram](https://lastminuteengineers.com/wp-content/uploads/iot/ESP32-Pinout.png) - while order and placement on the controller are not always the same between manufacturers, pin technologies and characteristics will.
