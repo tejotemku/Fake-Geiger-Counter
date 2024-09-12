@@ -33,10 +33,52 @@ This repository contains:
 
 </details>
 
-<br />
 ESP32 can be easily powered by a powerbank to be portable.
 
 #### Configuration
+Connect peripherals to esp using connecting cables and breadboard
+###### Potentiometer
+
+|Part Pin|ESP32 Pin|
+|-------|---------|
+|  VIN (<span style="color:red">red</span>)  |  3V3    |
+|  GND/VOUT (ussually <span style="color:black">black</span> or <span style="color:brown">brown</span>)  |  GND    |
+|  Data (often <span style="color:blue">blue</span>)  |  D15 or any other ADC (Analog-to-Digital Converter) pin    |
+
+###### Diode
+
+| Diode legs |ESP32 Pin|
+|-------|---------|
+|  Short leg |  GND    |
+|  Long leg  |  D22 or any other free data pin  |
+
+###### Servo motor
+
+|Part Pin|ESP32 Pin|
+|-------|---------|
+|  VIN (<span style="color:red">red</span>)  |  3V3    |
+| GND/VOUT (ussually <span style="color:black">black</span> or <span style="color:brown">brown</span>)  |  GND    |
+|  Data (often <span style="color:orange">orange</span>)  |  D18 or any other free data pin    |
+
+###### PAM8302 Amplifier to ESP32
+
+|Part Pin|ESP32 Pin|
+|-------|---------|
+|  VIN  |  3V3    |
+| GND   |  GND    |
+| A+  |  D23 or any other free data pin    |
+| A-  |  GND   |
+| SD  |  Unused in this project, leave unconnected  |
+
+###### Speaker to PAM8302 Amplifier
+
+|Speaker Pin|PAM8302 Pin|
+|-------|---------|
+|  <span style="color:red">red</span>  |  +    |
+| <span style="color:black">black</span>  |  -    |
+
+
+Example [ESP32 Wroom PINout diagram](https://lastminuteengineers.com/wp-content/uploads/iot/ESP32-Pinout.png) - while order and placement on the controller are not always the same between manufacturers, pin technologies and characteristics will.
 
 ## Code setup
 The code itself does not need any changes other than seting correct pins to potentiometer, speaker, diode and servo motor. It can be easily built and uploaded to ESP32 using [Platformio extension for VsCode](https://platformio.org/install/ide?install=vscode). Quick tutorial on how to use it from [Dave's Garage YT channel](https://youtu.be/XLQa1sX9KIk?si=jZ_BQljqpmHXpXcT&t=441). Once uploaded the code will run automatically every time when powered on by a charging cable or a powerbank. It does not need to be connected to a computer to work.
