@@ -7,6 +7,19 @@ This repository contains:
 3. 3D printable models of container (in few parts) with holes for the esp32 microcontroler and all used sensors
 4. Instruction on how to setup the fake geiger counter
 
+## Table of Contents
+
+- [ESP32 and used parts](#esp32-and-used-parts)
+  - [Parts](#parts)
+  - [Configuration](#configuration)  
+    - [Potentiometer](#potentiometer)
+    - [Diode](#diode)
+    - [Servo motor](#servo-motor)
+    - [PAM8302 Amplifier to ESP32](#pam8302-amplifier-to-esp32)
+    - [Speaker to PAM8302 Amplifier](#speaker-to-pam8302-amplifier)
+- [Code setup](#code-setup)
+- [Geiger counter sound](#geiger-counter-sound)
+- [3D model](#3d-model)
 
 ## ESP32 and used parts
 #### Parts
